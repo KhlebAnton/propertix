@@ -2724,7 +2724,7 @@ ul li::before {
     }
 
     .track_img {
-        background: url('../img/track/bg_mobile.svg') 50% / contain no-repeat;
+        background: url('../img/track/bg_mobile.png') 50% / contain no-repeat;
 
         aspect-ratio: 1 / 1.83;
     }
