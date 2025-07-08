@@ -6,11 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
+    <div class="modal modal_form_access">
+
+        <div class="modal__content modal__content_form">
+             <div class="modal_close"></div>
+             <div class="icon_access"></div>
+              <div class="modal__content-info">
+                <h3>We received your application!</h3>
+                <p class="small">
+                    Thank you for applying. We’ll get back to you shortly.
+                </p>
+              </div>
+        </div>
+    </div>
+    <div class="modal modal_form">
+
+        <div class="modal__content modal__content_form">
+            <div class="modal_close"></div>
+            <div class="modal__content-info">
+                <h3>Get demo access to Propertix</h3>
+            </div>
+            <div class="modal__content_form__wrapper">
+                <div class="modal__content_form__img">
+                    <img src="./img/form/img.svg" alt="Propertix">
+                </div>
+                <form class="modal-form" id="demoForm">
+                    <div class="form_label_wrapper">
+                        <label class="label_input">
+                            <input type="text" name="name" required>
+                            <span class="input-placeholder">Your name</span>
+                        </label>
+                        <label class="label_input label_input-phone">
+                            <input class="input_phone" type="tel" name="phone" required>
+                            <span class="input-placeholder">Phone number</span>
+                        </label>
+                        <label class="label_input">
+                            <input type="email" name="email" required>
+                            <span class="input-placeholder">Enter your email</span>
+                        </label>
+
+                        <p class="caption input_error_msg" style="display: none;"></p>
+                    </div>
+
+                    <button type="submit" class="btn btn_primary">Reach out to me</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="header__container container">
             <a href="#" class="logo"></a>
@@ -57,7 +105,7 @@
                         </p>
                     </div>
                     <div class="section_hero__info_bottom">
-                        <a href="#" class="btn btn_primary">Get demo access</a>
+                        <div  class="btn btn_primary open-modal-btn">Get demo access</div>
                         <p class="caption color_grey">
                             +20-30% ROI on data driven decision
                         </p>
@@ -706,7 +754,11 @@
         </div>
     </div> -->
 
+    <!-- Подключаем библиотеку intl-tel-input -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
     <script src="./scripts/header.js"></script>
+    <script src="./scripts/form.js"></script>
 
     <!-- GSAP и ScrollTrigger -->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>

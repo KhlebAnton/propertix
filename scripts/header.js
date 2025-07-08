@@ -24,16 +24,18 @@ document.addEventListener('DOMContentLoaded', function () {
         isNoScrolled(false)
     });
 
-    function isNoScrolled(bool) {
-        const body = document.body;
-        const html = document.documentElement;
-        if (bool) {
-            body.classList.add('no-scrolled');
-            html.classList.add('no-scrolled');
-        } else {
-            body.classList.remove('no-scrolled');
-            html.classList.remove('no-scrolled');
-        }
 
-    }
 });
+function isNoScrolled(bool) {
+    const body = document.body;
+    const html = document.documentElement;
+
+
+    if (bool) {
+        body.classList.add('no-scrolled');
+        html.classList.add('no-scrolled');
+    } else {
+        body.classList.remove('no-scrolled');
+        html.classList.remove('no-scrolled');
+    }
+}
