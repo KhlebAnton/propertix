@@ -2170,9 +2170,9 @@ pointer-events: all;
     height: 48px;
     background: url('../img/icon/check_fill.svg') 50% / contain no-repeat;
 }
-.section_404 {
+section.section_404 {
     min-height: 70vh;
-    padding-top: 96px;
+    padding-top: 106px;
     
 }
 .no-found_content {
